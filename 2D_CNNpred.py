@@ -182,6 +182,8 @@ def train(data_warehouse, i):
     my_file = Path(join(Base_dir,
         '2D-models/best-{}-{}-{}-{}-{}.h5'.format(epochs, seq_len, number_filter, drop, i)))
     filepath = join(Base_dir, '2D-models/best-{}-{}-{}-{}-{}.h5'.format(epochs, seq_len, number_filter, drop, i))
+
+    print("test")
     if my_file.is_file():
         print('loading model')
 
